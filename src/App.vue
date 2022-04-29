@@ -1,19 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
-  <div>Hello There I am testing out git</div>
-  <AboutMe name="Sam Wilk" />
+  <main class="AboutMe">
+    <PictureComp
+      imageFile="Profile-pic.jpeg"
+      msg="Sam Wilk"
+      height="200"
+      width="200"
+    />
+    <AboutMe name="Sam Wilk" />
+  </main>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import AboutMe from "./components/AboutMe.vue";
+import PictureComp from "./components/PictureComp.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
     AboutMe,
+    PictureComp,
   },
 };
 </script>
@@ -27,5 +32,14 @@ export default {
   font-family: "Roboto", sans-serif;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.AboutMe {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 50vw;
+  justify-content: space-evenly;
+  align-items: center;
 }
 </style>

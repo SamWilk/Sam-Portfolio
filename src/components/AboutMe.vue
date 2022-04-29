@@ -1,6 +1,8 @@
 <template>
-  <div>This component is about {{ name }}</div>
-  <div>This is where I need to add a picture of me!</div>
+  <div>
+    <div>This component is about {{ name }}</div>
+    <div>This is where I need to add a picture of me!</div>
+  </div>
 </template>
 
 <script>
