@@ -28,18 +28,19 @@ export default {
 .container {
   font-family: "Roboto", sans-serif;
   position: sticky;
-  top: 0%;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   max-height: 5vh;
   min-height: 5vh;
-  background: #2a3e38;
+  background: #b5e8d6;
   color: #6769e1;
   overflow: hidden;
 }
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   .container {
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -51,5 +52,5 @@ export default {
     color: #6769e1;
     overflow: hidden;
   }
-}
+} */
 </style>
