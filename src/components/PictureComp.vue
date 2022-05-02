@@ -1,11 +1,14 @@
 <template>
-  <img
-    :alt="getMsg()"
-    :src="require(`@/assets/${imageFile}`)"
-    :width="getWidth()"
-    :height="getHeight()"
-    class="myPic"
-  />
+  <div class="containerImg">
+    <img
+      :alt="getMsg()"
+      :src="require(`@/assets/${imageFile}`)"
+      :width="getWidth()"
+      :height="getHeight()"
+      class="myPic"
+    />
+    <!-- <div class="backImg" /> -->
+  </div>
 </template>
 
 <script>
@@ -36,6 +39,10 @@ export default {
 
 <style scoped>
 .myPic {
+  /* position: absolute; */
   border-radius: 12px;
+  /* z-index: 2;
+  transform: translate(-15px, 15px);
+  transition: ease 0.4s; */
 }
 </style>

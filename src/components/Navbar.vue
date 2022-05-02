@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="content">NavBar Here</div>
+    <div class="content"></div>
   </div>
 </template>
 
@@ -28,29 +28,33 @@ export default {
 .container {
   font-family: "Roboto", sans-serif;
   position: sticky;
+  top: 0%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100vw;
   max-height: 5vh;
-  min-height: 5vh;
+  min-height: 3rem;
   background: #b5e8d6;
   color: #6769e1;
   overflow: hidden;
 }
 
-/* @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .container {
     font-family: "Roboto", sans-serif;
+    position: sticky;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     max-height: 5vh;
-    min-height: 5vh;
-    background: black;
+    min-height: 3rem;
+    background: #b5e8d6;
     color: #6769e1;
     overflow: hidden;
   }
-} */
+}
 </style>

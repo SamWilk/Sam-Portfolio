@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <div>This component is about {{ name }}</div>
-    <div>This is where I need to add a picture of me!</div>
+  <div class="containerAbout">
+    <h3>
+      My Name is <label>{{ name }}</label>
+    </h3>
+    <h5>I am a <label>Full Stack Developer</label></h5>
   </div>
 </template>
 
@@ -13,3 +15,15 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+label {
+  color: #6769e1;
+}
+.containerAbout {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  justify-content: space-evenly;
+}
+</style>
